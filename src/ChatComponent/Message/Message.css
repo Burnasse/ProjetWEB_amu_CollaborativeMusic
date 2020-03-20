@@ -1,0 +1,35 @@
+.msgBox {
+    background: #343434;
+    border-radius: 20px;
+    padding: 5px 20px;
+    color: white;
+    display: inline-block;
+    max-width: 80%;
+}
+
+.msgText {
+    color: #dadaec;
+    width: 100%;
+    float: left;
+    font-size: 1.1em;
+}
+
+.msgText img {
+    vertical-align: middle;
+}
+
+.msgContainer {
+    background-color: #1A1A1D;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 5%;
+    margin-top: 3px;
+}
+
+.sentText {
+    display: flex;
+    align-items: center;
+    font-family: Helvetica;
+    color: #828282;
+    padding: 10px;
+}
