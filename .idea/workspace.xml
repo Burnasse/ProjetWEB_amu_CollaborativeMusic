@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2cbc1bee-a7d9-409d-b385-aad408e85c75" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/ChatComponent/Join/backgroundMusic.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ChatComponent/Join/bluryBckMusic.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ChatComponent/Chat/Chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChatComponent/Chat/Chat.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MusicComponent/MusicComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/MusicComponent/MusicComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MusicRoom.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/MusicRoom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ChatComponent/Join/Join.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChatComponent/Join/Join.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ChatComponent/Join/Join.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChatComponent/Join/Join.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,11 +51,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Nicav\WebstormProjects\ProjetWeb-CollaborativeMusic\src\ChatComponent\Join" />
       <recent name="C:\Users\Nicav\WebstormProjects\untitled1\src\MusicComponent\InstrumentComponent\Piano" />
       <recent name="C:\Users\Nicav\WebstormProjects\untitled1\src\MusicComponent\InstrumentComponent" />
       <recent name="C:\Users\Nicav\WebstormProjects\untitled1\src" />
       <recent name="C:\Users\Nicav\WebstormProjects\untitled1\src\ChatComponent\Join" />
-      <recent name="C:\Users\Nicav\WebstormProjects\untitled1\src\ChatComponent\Messages" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -95,12 +98,24 @@
       <workItem from="1584709485941" duration="1841000" />
       <workItem from="1584711345619" duration="78000" />
       <workItem from="1584711481155" duration="6414000" />
-      <workItem from="1584722311093" duration="2460000" />
+      <workItem from="1584722311093" duration="7045000" />
     </task>
+    <task id="LOCAL-00001" summary="move socket">
+      <created>1584726877580</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1584726877580</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="move socket" />
+    <option name="LAST_COMMIT_MESSAGE" value="move socket" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#Inspections" timestamp="1584712577332">
@@ -111,33 +126,45 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="714" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1584694831254" />
-    <state width="1899" height="262" key="GridCell.Tab.0.bottom" timestamp="1584724295984">
+    <state x="571" y="114" key="CommitChangelistDialog2" timestamp="1584726876285">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="262" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1584724295984" />
-    <state width="1899" height="262" key="GridCell.Tab.0.center" timestamp="1584724295984">
+    <state x="571" y="114" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1584726876285" />
+    <state width="1899" height="378" key="GridCell.Tab.0.bottom" timestamp="1584733649323">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="262" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1584724295984" />
-    <state width="1899" height="262" key="GridCell.Tab.0.left" timestamp="1584724295984">
+    <state width="1899" height="378" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1584733649323" />
+    <state width="1899" height="378" key="GridCell.Tab.0.center" timestamp="1584733649323">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="262" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1584724295984" />
-    <state width="1899" height="262" key="GridCell.Tab.0.right" timestamp="1584724295984">
+    <state width="1899" height="378" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1584733649323" />
+    <state width="1899" height="378" key="GridCell.Tab.0.left" timestamp="1584733649323">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="262" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1584724295984" />
+    <state width="1899" height="378" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1584733649323" />
+    <state width="1899" height="378" key="GridCell.Tab.0.right" timestamp="1584733649323">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="378" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1584733649323" />
     <state x="461" y="162" key="SettingsEditor" timestamp="1584709551865">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1584709551865" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1584711516910">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1584727208156">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1584711516910" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1584727208156" />
     <state x="656" y="118" width="607" height="804" key="find.popup" timestamp="1584711176729">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="656" y="118" width="607" height="804" key="find.popup/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1584711176729" />
+    <state x="687" y="311" key="git4idea.merge.GitMergeDialog" timestamp="1584727000353">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="687" y="311" key="git4idea.merge.GitMergeDialog/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1584727000353" />
+    <state x="696" y="420" key="git4idea.ui.GitStashDialog" timestamp="1584727018665">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="696" y="420" key="git4idea.ui.GitStashDialog/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1584727018665" />
   </component>
 </project>
