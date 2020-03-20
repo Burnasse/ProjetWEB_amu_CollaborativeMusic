@@ -1,5 +1,6 @@
 import React from "react";
-import {BrowserRouter as Router, Route} from 'react-router-dom';
+import {Route} from 'react-router';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 import Join from './ChatComponent/Join/Join';
 import MusicRoom from "./MusicRoom";
