@@ -1,8 +1,8 @@
 import React from "react";
 import io from 'socket.io-client';
 
-import Chat from "./ChatComponent/Chat/Chat";
-import MusicComponent from "./MusicComponent/MusicComponent";
+import Chat from "../ChatComponent/Chat/Chat";
+import MusicComponent from "../MusicComponent/MusicComponent";
 import './MusicRoom.css';
 
 const addrLocation = "localhost:5000"

@@ -9,14 +9,14 @@ L'interface proposera plusieurs instruments que chaque musiciens pourra manipule
 Un lien sera mis a disposition afin d'inviter d'autre personne en tant que spectateur qui pourront communiquer
 à l'aide d'un chat.
 
-#### Fonctionnalitées prévues
+#### Fonctionnalités prévues
 
     - Connexion à une "Room" avec un pseudo (minimaliste)
     - Chat
     - Implémentations d'instruments {en cours}
     - Partage du lien (spectateur seulement) {en cours}
 
-#### Ajout possible
+#### Ajouts possible
 
     - Utilisation du Microphone
     - Enregistrement des instruments
