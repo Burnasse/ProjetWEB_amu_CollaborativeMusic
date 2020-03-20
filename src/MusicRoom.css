@@ -1,0 +1,17 @@
+.musicRoom{
+    background-color: #1A1A1D;
+}
+
+.musicComponent{
+    float: left;
+    width:auto;
+    height:100%;
+    overflow:hidden;
+    background-color: #1A1A1D;
+    padding: 20px;
+}
+
+.chat{
+    float: right;
+    width: 25%;
+}

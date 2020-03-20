@@ -1,5 +1,5 @@
 import React from 'react';
-import './css/InfoBar.css';
+import './InfoBar.css';
 
 const InfoBar = ({room}) => (
     <div className="InfoBar">
@@ -7,6 +7,7 @@ const InfoBar = ({room}) => (
             <h3>{room}</h3>
         </div>
         <div className="rightContainer">
+            {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
             <a href="/"/>
         </div>
     </div>

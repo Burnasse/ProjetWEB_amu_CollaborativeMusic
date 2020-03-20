@@ -1,5 +1,5 @@
 import React from "react";
-import './css/Message.css';
+import './Message.css';
 
 const Message = ({message: {user, text}, name}) => {
     let isCurrentUser = false;
