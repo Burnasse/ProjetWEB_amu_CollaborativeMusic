@@ -6,10 +6,7 @@ import Input from "../Input/Input";
 import Messages from "../Messages/Messages";
 import './Chat.css';
 
-
-let socket;
-
-const Chat = ({location}) => {
+const Chat = ({location, socket, addrLocation}) => {
 
     console.log(location)
     const [name, setName] = useState('');
@@ -17,12 +14,10 @@ const Chat = ({location}) => {
     const [message, setMessage] = useState('');
     const [messages, setMessages] = useState([]);
 
-    const addrLocation = "localhost:5000"
-
     useEffect(() => {
         const {name, room} = queryString.parse(location.search)
 
-        socket = io(addrLocation);
+        console.log(name, room)
 
         setRoom(room)
         setName(name)
@@ -35,14 +30,14 @@ const Chat = ({location}) => {
             socket.emit('disconnect')
             socket.off()
         }
-    }, [addrLocation, location.search]) // seulement si LOCATION et location.search change
+    }, [addrLocation, location.search, socket]) // seulement si LOCATION et location.search change
 
     useEffect(() => {
         socket.on('message', (message) => {
             setMessages([...messages, message])
 
         })
-    },[message, messages])
+    },[message, messages, socket])
 
     const sendMessage = (event) => {
         event.preventDefault()
