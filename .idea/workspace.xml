@@ -2,26 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2cbc1bee-a7d9-409d-b385-aad408e85c75" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ChatComponent/Chat/Chat.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChatComponent/Chat/Chat.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ChatComponent/Chat/Chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChatComponent/Chat/Chat.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ChatComponent/InfoBar/InfoBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChatComponent/InfoBar/InfoBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ChatComponent/Input/Input.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChatComponent/Input/Input.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ChatComponent/Join/Join.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChatComponent/Join/Join.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ChatComponent/Message/Message.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChatComponent/Message/Message.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ChatComponent/Messages/Messages.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChatComponent/Messages/Messages.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MusicComponent/MusicComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/MusicComponent/MusicComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MusicRoom.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/MusicRoom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MusicRoom.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/MusicRoom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/logo.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/users.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +91,7 @@
       <workItem from="1584700239811" duration="2281000" />
       <workItem from="1584709485941" duration="1841000" />
       <workItem from="1584711345619" duration="78000" />
-      <workItem from="1584711481155" duration="436000" />
+      <workItem from="1584711481155" duration="981000" />
     </task>
     <servers />
   </component>
@@ -118,6 +99,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="552" y="178" key="#Inspections" timestamp="1584712577332">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#Inspections/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1584712577332" />
     <state x="714" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584694831254">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
