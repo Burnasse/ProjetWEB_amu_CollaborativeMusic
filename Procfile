@@ -1,2 +1,2 @@
-server: node /index.js
+server: node index.js
 api: node src/index.js
