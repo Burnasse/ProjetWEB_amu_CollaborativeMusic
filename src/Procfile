@@ -1,1 +1,1 @@
-api: node src/index.js
+api: node index.js
