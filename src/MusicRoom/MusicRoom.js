@@ -5,7 +5,7 @@ import Chat from "../ChatComponent/Chat/Chat";
 import MusicComponent from "../MusicComponent/MusicComponent";
 import './MusicRoom.css';
 
-const addrLocation = "localhost:5000"
+const addrLocation = "https://collaborativemusic-server.herokuapp.com/"
 let socket;
 
 const MusicRoom = () =>{
