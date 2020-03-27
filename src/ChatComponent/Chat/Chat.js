@@ -5,31 +5,10 @@ import Input from "../Input/Input";
 import Messages from "../Messages/Messages";
 import './Chat.css';
 
-const Chat = ({location, socket, addrLocation}) => {
+const Chat = ({socket, room, name}) => {
 
-    console.log(location)
-    const [name, setName] = useState('');
-    const [room, setRoom] = useState('');
     const [message, setMessage] = useState('');
     const [messages, setMessages] = useState([]);
-
-    useEffect(() => {
-        const {name, room} = queryString.parse(location.search)
-
-        console.log(name, room)
-
-        setRoom(room)
-        setName(name)
-
-        socket.emit('JOIN', {name, room}, () => {
-
-        })
-
-        return () => {
-            socket.emit('disconnect')
-            socket.off()
-        }
-    }, [addrLocation, location.search, socket]) // seulement si LOCATION et location.search change
 
     useEffect(() => {
         socket.on('message', (message) => {

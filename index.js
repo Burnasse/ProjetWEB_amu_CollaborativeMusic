@@ -19,8 +19,8 @@ io.on('connection', (socket) => {
 
         if(error) return callback(error);
 
-        socket.emit('message', {user: 'Systeme', text: `${user.name}, has joined the room`})
-        socket.broadcast.to(user.room).emit('message', {user: 'Systeme', text: `${user.name}, has joined the room`})
+        socket.emit('message', {user: 'Systeme', text: `${user.name}, has joined the room ${user.room}` })
+        socket.broadcast.to(user.room).emit('message', {user: 'Systeme', text: `${user.name}, has joined the room ${user.room}`})
 
         socket.join(user.room)
 
@@ -31,7 +31,6 @@ io.on('connection', (socket) => {
 
     socket.on('sendMessage', (message, callback) => {
         const user = getUser(socket.id)
-
         io.to(user.room).emit('message', {user: user.name, text: message})
         io.to(user.room).emit('roomData', {room: user.room,users: getUsersInRoom(user.room)})
 
@@ -46,6 +45,13 @@ io.on('connection', (socket) => {
         }
         console.log(socket.id, " left")
     } )
+
+    socket.on('sendNote', (midiNumbers, instrument) => {
+        const user = getUser(socket.id)
+        socket.broadcast.to(user.room).emit('playNote', midiNumbers)
+        console.log("note send")
+        //socket.emit('playNote', midiNumbers)
+    })
 })
 
 app.use(router)

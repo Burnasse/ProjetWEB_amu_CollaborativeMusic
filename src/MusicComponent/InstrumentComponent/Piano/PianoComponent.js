@@ -6,6 +6,8 @@ import Soundfont from 'soundfont-player';
 import 'react-piano/dist/styles.css';
 
 class PianoComponent extends React.Component {
+
+
     static propTypes = {
         instrumentName: PropTypes.string.isRequired,
         hostname: PropTypes.string.isRequired,
@@ -31,12 +33,20 @@ class PianoComponent extends React.Component {
 
     componentDidMount() {
         this.loadInstrument(this.props.instrumentName);
+        this.props.socket.on('playNote', (midiNumbers) => {
+            this.playNote(midiNumbers);
+            midiNumbers = null
+        })
     }
 
     componentDidUpdate(prevProps, prevState) {
         if (prevProps.instrumentName !== this.props.instrumentName) {
             this.loadInstrument(this.props.instrumentName);
         }
+    }
+
+    sendNote = (note, instrument) => {
+        this.props.socket.emit('sendNote', note, instrument);
     }
 
     loadInstrument = instrumentName => {
@@ -69,6 +79,7 @@ class PianoComponent extends React.Component {
     };
 
     stopNote = midiNumber => {
+        this.sendNote(midiNumber)
         this.props.audioContext.resume().then(() => {
             if (!this.state.activeAudioNodes[midiNumber]) {
                 return;
@@ -105,6 +116,10 @@ class PianoComponent extends React.Component {
             stopNote: this.stopNote,
             stopAllNotes: this.stopAllNotes,
         });
+    }
+
+    playNotee(midiNumbers) {
+        this.state.instrument.play(midiNumbers)
     }
 }
 

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import PianoComponent from "./InstrumentComponent/Piano/PianoComponent";
 import {Piano, KeyboardShortcuts, MidiNumbers} from 'react-piano';
 
@@ -15,9 +15,11 @@ const keyboardShortcuts = KeyboardShortcuts.create({
     keyboardConfig: KeyboardShortcuts.HOME_ROW,
 });
 
-class MusicComponent extends React.Component {
-    render() {
-        return <PianoComponent
+const MusicComponent = ({socket}) => {
+
+        return (
+        <PianoComponent
+            socket={socket}
             instrumentName="acoustic_grand_piano"
             audioContext={audioContext}
             hostname={soundfontHostname}
@@ -31,7 +33,8 @@ class MusicComponent extends React.Component {
                     keyboardShortcuts={keyboardShortcuts}
                 />
             )}/>
-    }
+    )
+
 }
 
 export default MusicComponent;
