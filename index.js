@@ -49,9 +49,14 @@ io.on('connection', (socket) => {
     socket.on('sendNote', (midiNumbers, instrument) => {
         const user = getUser(socket.id)
         socket.broadcast.to(user.room).emit('playNote', midiNumbers)
-        console.log("note send")
-        //socket.emit('playNote', midiNumbers)
     })
+
+    socket.on('sendDrum', (audioElm) => {
+        console.log("drum send")
+        const user = getUser(socket.id)
+        socket.broadcast.to(user.room).emit('playDrum', audioElm)
+    })
+
 })
 
 app.use(router)

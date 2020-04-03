@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2cbc1bee-a7d9-409d-b385-aad408e85c75" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/MusicComponent/InstrumentComponent/drum/DrumComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MusicComponent/InstrumentComponent/drum/drum.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ChatComponent/Chat/Chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChatComponent/Chat/Chat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MusicComponent/InstrumentComponent/Piano/PianoComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/MusicComponent/InstrumentComponent/Piano/PianoComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MusicComponent/MusicComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/MusicComponent/MusicComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MusicRoom/MusicRoom.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/MusicRoom/MusicRoom.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,8 +44,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_interpreter_path" value="$APPLICATION_CONFIG_DIR$/node/node-v12.13.1-win-x64/node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -100,7 +109,10 @@
       <workItem from="1584889694544" duration="7977000" />
       <workItem from="1584968757341" duration="4047000" />
       <workItem from="1585302712013" duration="6336000" />
-      <workItem from="1585338600945" duration="541000" />
+      <workItem from="1585338600945" duration="2443000" />
+      <workItem from="1585425864571" duration="1249000" />
+      <workItem from="1585908537311" duration="9821000" />
+      <workItem from="1585938813627" duration="7240000" />
     </task>
     <task id="LOCAL-00001" summary="move socket">
       <created>1584726877580</created>
@@ -228,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585338673011</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="fix addrLocation">
+      <created>1585339163534</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1585339163534</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,51 +262,60 @@
     <MESSAGE value="add Procfile" />
     <MESSAGE value="change addr for the connection" />
     <MESSAGE value="fix chat and playSound" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix chat and playSound" />
+    <MESSAGE value="fix addrLocation" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix addrLocation" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="178" key="#Inspections" timestamp="1584712577332">
+    <state x="552" y="178" key="#ESLint" timestamp="1585915441406">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="178" key="#Inspections/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1584712577332" />
-    <state x="2491" y="255" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584896533193">
-      <screen x="1920" y="0" width="1536" height="824" />
+    <state x="552" y="178" key="#ESLint/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1585915441406" />
+    <state x="552" y="178" key="#Inspections" timestamp="1585914606162">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="714" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1584694831254" />
+    <state x="552" y="178" key="#Inspections/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1585914606162" />
+    <state x="714" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585909824914">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="714" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1585909824914" />
     <state x="2491" y="255" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1536.824@1920.0.1536.824" timestamp="1584896533193" />
-    <state x="571" y="114" key="CommitChangelistDialog2" timestamp="1585338671711">
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585946533703">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="571" y="114" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1585338671711" />
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1585946533703" />
+    <state x="571" y="114" key="CommitChangelistDialog2" timestamp="1585947525891">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="571" y="114" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1585947525891" />
     <state x="2308" y="13" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1536.824@1920.0.1536.824" timestamp="1584897630135" />
-    <state width="1899" height="377" key="GridCell.Tab.0.bottom" timestamp="1585323827032">
+    <state width="1899" height="264" key="GridCell.Tab.0.bottom" timestamp="1585944674117">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="377" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1585323827032" />
+    <state width="1899" height="264" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1585944674117" />
     <state width="1515" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1536.824@1920.0.1536.824" timestamp="1584897808175" />
-    <state width="1899" height="377" key="GridCell.Tab.0.center" timestamp="1585323827032">
+    <state width="1899" height="264" key="GridCell.Tab.0.center" timestamp="1585944674116">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="377" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1585323827032" />
+    <state width="1899" height="264" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1585944674116" />
     <state width="1515" height="284" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1536.824@1920.0.1536.824" timestamp="1584897808175" />
-    <state width="1899" height="377" key="GridCell.Tab.0.left" timestamp="1585323827010">
+    <state width="1899" height="264" key="GridCell.Tab.0.left" timestamp="1585944674116">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="377" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1585323827010" />
+    <state width="1899" height="264" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1585944674116" />
     <state width="1515" height="284" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1536.824@1920.0.1536.824" timestamp="1584897808175" />
-    <state width="1899" height="377" key="GridCell.Tab.0.right" timestamp="1585323827032">
+    <state width="1899" height="264" key="GridCell.Tab.0.right" timestamp="1585944674116">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="377" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1585323827032" />
+    <state width="1899" height="264" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1585944674116" />
     <state width="1515" height="284" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1536.824@1920.0.1536.824" timestamp="1584897808175" />
     <state x="461" y="162" key="SettingsEditor" timestamp="1584709551865">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1584709551865" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1585339141749">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1585339169110">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1585339141749" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1585339169110" />
     <state x="2362" y="200" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1536.824@1920.0.1536.824" timestamp="1584897634024" />
     <state x="656" y="118" width="607" height="804" key="find.popup" timestamp="1584711176729">
       <screen x="0" y="0" width="1920" height="1040" />

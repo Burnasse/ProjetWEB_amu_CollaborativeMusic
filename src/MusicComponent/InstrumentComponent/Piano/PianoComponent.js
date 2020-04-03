@@ -118,9 +118,6 @@ class PianoComponent extends React.Component {
         });
     }
 
-    playNotee(midiNumbers) {
-        this.state.instrument.play(midiNumbers)
-    }
 }
 
 export default PianoComponent;

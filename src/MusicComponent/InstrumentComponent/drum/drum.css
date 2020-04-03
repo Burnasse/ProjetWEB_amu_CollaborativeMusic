@@ -1,0 +1,106 @@
+.drum {
+    padding: 15px;
+    background-color: #3f3f3f;
+    margin: 30px auto 0;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+}
+
+.drum-display {
+    background-color: #202020;
+    color: #35cac5;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 20px 15px;
+    text-align: center;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    margin-top: 30px;
+    border: 1px solid #000;
+}
+
+.drum-pad {
+    user-select: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #575757;
+    border: 2px solid #fffbf9;
+    border-radius: 10px;
+}
+
+.drum-display h1 {
+    margin: 0;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+.drum-control {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    font-size: 0.85rem;
+}
+
+.drum-control-volumn {
+    margin-left: 5px;
+    width: calc(100% - 140px);
+}
+
+.drum-control-bank {
+    width: 120px;
+}
+
+.drum-control-volumn-value {
+    opacity: 0;
+    color: #35cac5;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+.drum-control-volumn input {
+    padding-right: 15px;
+}
+
+.drum-pad {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+
+.drum-pad:hover {
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(255, 255, 255, 0.12), 0 1px 2px rgba(255, 255, 255, 0.24);
+    -webkit-box-shadow: 0 1px 3px rgba(255, 255, 255, 0.12), 0 1px 2px rgba(255, 255, 255, 0.24);
+    -moz-box-shadow: 0 1px 3px rgba(255, 255, 255, 0.12), 0 1px 2px rgba(255, 255, 255, 0.24);
+}
+
+.content {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    grid-template-rows: repeat(3, 80px);
+    grid-gap: 5px;
+}
+
+
+
+
+

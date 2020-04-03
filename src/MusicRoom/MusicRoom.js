@@ -6,7 +6,7 @@ import MusicComponent from "../MusicComponent/MusicComponent";
 import './MusicRoom.css';
 import queryString from "query-string";
 
-const addrLocation = "https://collaborativemusic-server.herokuapp.com/"
+const addrLocation = "localhost:5000";//"https://collaborativemusic-server.herokuapp.com/"
 let socket = io(addrLocation);
 
 const MusicRoom = ({location}) =>{
