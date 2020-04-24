@@ -9,9 +9,8 @@ import SignUp from "./Authentication/SignUp/SignUp";
 import LogIn from "./Authentication/LogIn/LogIn";
 import MusicRoom from "./HandleRoom/MusicRoom";
 
-export const SocketContext = React.createContext(io("localhost:5000"));
-
-const socket = io("localhost:5000");
+const socket = io("https://collaborativemusic-server.herokuapp.com/");
+export const SocketContext = React.createContext(socket);
 
 class App extends React.Component {
     render() {

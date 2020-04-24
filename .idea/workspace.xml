@@ -2,36 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2cbc1bee-a7d9-409d-b385-aad408e85c75" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/rooms.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Authentication/Auth/Auth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Authentication/Auth/auth.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Authentication/LogIn/LogIn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Authentication/LogIn/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Authentication/PrivateRoute.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Authentication/SignUp/SignUp.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Authentication/SignUp/signup.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HandleRoom/MusicRoom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HandleRoom/createRoom/CreateRoom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HandleRoom/createRoom/createroom.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HandleRoom/musicroom.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MusicComponent/musiccomponent.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/firebaseConfig.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ChatComponent/Chat/Chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChatComponent/Chat/Chat.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MusicComponent/MusicComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/MusicComponent/MusicComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MusicRoom/Join/Join.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/HandleRoom/Join/Join.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MusicRoom/Join/Join.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/HandleRoom/Join/JoinRoom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MusicRoom/Join/backgroundMusic.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/backgroundMusic.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MusicRoom/Join/bluryBckMusic.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/bluryBckMusic.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MusicRoom/MusicRoom.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Room/room.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MusicRoom/MusicRoom.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Room/Room.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/users.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +119,7 @@
       <workItem from="1587572166388" duration="2614000" />
       <workItem from="1587636227356" duration="8124000" />
       <workItem from="1587723898215" duration="10062000" />
-      <workItem from="1587747005109" duration="15144000" />
+      <workItem from="1587747005109" duration="15991000" />
     </task>
     <task id="LOCAL-00001" summary="move socket">
       <created>1584726877580</created>
@@ -296,7 +268,21 @@
       <option name="project" value="LOCAL" />
       <updated>1586442462956</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="add Authentification">
+      <created>1587769840670</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1587769840670</updated>
+    </task>
+    <task id="LOCAL-00023" summary="add Authentification">
+      <created>1587769925509</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1587769925509</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,7 +302,8 @@
     <MESSAGE value="fix chat and playSound" />
     <MESSAGE value="fix addrLocation" />
     <MESSAGE value="add DrumComponent" />
-    <option name="LAST_COMMIT_MESSAGE" value="add DrumComponent" />
+    <MESSAGE value="add Authentification" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Authentification" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#ESLint" timestamp="1585915441406">
@@ -336,39 +323,39 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1585946533703" />
-    <state x="571" y="114" key="CommitChangelistDialog2" timestamp="1587769839396">
+    <state x="571" y="114" key="CommitChangelistDialog2" timestamp="1587769924824">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="571" y="114" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1587769839396" />
+    <state x="571" y="114" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1587769924824" />
     <state x="2308" y="13" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1536.824@1920.0.1536.824" timestamp="1584897630135" />
-    <state width="1899" height="264" key="GridCell.Tab.0.bottom" timestamp="1587769413590">
+    <state width="1899" height="264" key="GridCell.Tab.0.bottom" timestamp="1587770483785">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="264" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1587769413590" />
+    <state width="1899" height="264" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1587770483785" />
     <state width="1515" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1536.824@1920.0.1536.824" timestamp="1584897808175" />
-    <state width="1899" height="264" key="GridCell.Tab.0.center" timestamp="1587769413590">
+    <state width="1899" height="264" key="GridCell.Tab.0.center" timestamp="1587770483785">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="264" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1587769413590" />
+    <state width="1899" height="264" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1587770483785" />
     <state width="1515" height="284" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1536.824@1920.0.1536.824" timestamp="1584897808175" />
-    <state width="1899" height="264" key="GridCell.Tab.0.left" timestamp="1587769413590">
+    <state width="1899" height="264" key="GridCell.Tab.0.left" timestamp="1587770483785">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="264" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1587769413590" />
+    <state width="1899" height="264" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1587770483785" />
     <state width="1515" height="284" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1536.824@1920.0.1536.824" timestamp="1584897808175" />
-    <state width="1899" height="264" key="GridCell.Tab.0.right" timestamp="1587769413590">
+    <state width="1899" height="264" key="GridCell.Tab.0.right" timestamp="1587770483785">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="264" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1587769413590" />
+    <state width="1899" height="264" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1587770483785" />
     <state width="1515" height="284" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1536.824@1920.0.1536.824" timestamp="1584897808175" />
     <state x="461" y="162" key="SettingsEditor" timestamp="1584709551865">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1584709551865" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1587769874764">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1587770114805">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1587769874764" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1587770114805" />
     <state x="2362" y="200" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1536.824@1920.0.1536.824" timestamp="1584897634024" />
     <state x="656" y="118" width="607" height="804" key="find.popup" timestamp="1584711176729">
       <screen x="0" y="0" width="1920" height="1040" />
