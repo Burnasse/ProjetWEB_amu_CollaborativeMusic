@@ -16,15 +16,6 @@ html, body {
     box-sizing: border-box;
 }
 
-.joinOut {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    height: 100vh;
-    align-items: center;
-    background-image: url("bluryBckMusic.jpg");
-}
-
 .joinIn {
     width: 20%;
 }
@@ -59,15 +50,9 @@ html, body {
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-    .joinOut {
-        height: 100%;
-    }
-
     .joinIn {
         width: 90%;
     }
-
-
 }
 
 button:focus {

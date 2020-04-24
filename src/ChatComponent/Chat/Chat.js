@@ -1,10 +1,12 @@
-import React, {useState, useEffect} from "react";
+import React, {useState, useEffect, useContext} from "react";
 import InfoBar from "../InfoBar/InfoBar";
 import Input from "../Input/Input";
 import Messages from "../Messages/Messages";
 import './Chat.css';
+import {SocketContext} from "../../App";
 
-const Chat = ({socket, room, name}) => {
+const Chat = ({room, name}) => {
+    const socket = useContext(SocketContext);
 
     const [message, setMessage] = useState('');
     const [messages, setMessages] = useState([]);
@@ -12,7 +14,6 @@ const Chat = ({socket, room, name}) => {
     useEffect(() => {
         socket.on('message', (message) => {
             setMessages([...messages, message])
-
         })
     },[message, messages, socket])
 

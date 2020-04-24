@@ -1,13 +1,11 @@
-const users = []
+const users = [];
+
+const existingUser = (userName) => {
+    return users.find((user) => user.name === userName);
+}
 
 const addUser = ({ idSocket, name, room}) => {
-    name = name.trim().toLowerCase();
     room = room.trim().toLowerCase();
-
-    const existingUser = users.find((user) => user.room === room && user.name === name)
-
-    if (existingUser)
-        return {error: 'Username already exist'};
 
     const user = { idSocket, name, room}
     users.push(user)
@@ -24,9 +22,10 @@ const removeUser = (idSocket) => {
 
 const getUser = (idSocket) => users.find((user) => user.idSocket === idSocket)
 
-
 const getUsersInRoom = (room) => {
     users.filter((user) => user.room === room)
 }
 
-module.exports = {addUser, removeUser, getUser, getUsersInRoom};
+
+
+module.exports = {existingUser, addUser, removeUser, getUser, getUsersInRoom};

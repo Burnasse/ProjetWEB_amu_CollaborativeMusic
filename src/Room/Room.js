@@ -1,15 +1,13 @@
-import React, {useEffect, useState} from "react";
-import io from 'socket.io-client';
-
+import React, {useContext, useEffect, useState} from "react";
 import Chat from "../ChatComponent/Chat/Chat";
 import MusicComponent from "../MusicComponent/MusicComponent";
-import './MusicRoom.css';
+import './room.css';
 import queryString from "query-string";
+import {SocketContext} from "../App";
 
-const addrLocation = "https://collaborativemusic-server.herokuapp.com/"
-let socket = io(addrLocation);
+const Room = ({location}) =>{
 
-const MusicRoom = ({location}) =>{
+    const socket = useContext(SocketContext);
 
     const [name, setName] = useState('');
     const [room, setRoom] = useState('');
@@ -24,19 +22,23 @@ const MusicRoom = ({location}) =>{
         setRoom(room)
         setName(name)
 
-        socket.emit('JOIN', {name, room}, () => {})
+        socket.emit('JOIN', {name, room}, (error) => {
+            if(error){
+                alert(error);
+            }
+        })
 
         return () => {
             socket.emit('disconnect')
             socket.off()
         }
 
-    }, [addrLocation, location.search, socket]) // seulement si LOCATION et location.search change
+    }, [location.search, socket])
 
     return (
-        <div className="musicRoom">
+        <div className="room">
             <div className="musicComponent">
-                <MusicComponent socket={socket}/>
+                <MusicComponent/>
             </div>
             <div className="chat">
                 {/* eslint-disable-next-line no-restricted-globals */}
@@ -46,4 +48,4 @@ const MusicRoom = ({location}) =>{
     )
 }
 
-export default MusicRoom;
+export default Room;

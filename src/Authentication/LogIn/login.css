@@ -1,0 +1,42 @@
+.loginOut {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    align-items: center;
+    background-image: url("../../resources/bluryBckMusic.jpg");
+}
+
+.head {
+    color: white;
+}
+
+.loginIn {
+    width: 20%;
+}
+
+::placeholder {
+    color: #575757;
+}
+
+.loginInput {
+    border-radius: 0;
+    padding: 15px 20px;
+    width: 100%;
+}
+
+.button {
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #00ff8f;
+    padding: 20px;
+    border-radius: 0px 0px 5px 5px;
+    display: inline-block;
+    border: none;
+    width: 100%;
+}
+
+button:focus {
+    outline: 0;
+}
