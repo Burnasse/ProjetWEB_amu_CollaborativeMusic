@@ -7,7 +7,6 @@ import 'react-piano/dist/styles.css';
 
 class PianoComponent extends React.Component {
 
-
     static propTypes = {
         instrumentName: PropTypes.string.isRequired,
         hostname: PropTypes.string.isRequired,
@@ -45,9 +44,9 @@ class PianoComponent extends React.Component {
         }
     }
 
-    sendNote = (note, instrument) => {
-        this.props.socket.emit('sendNote', note, instrument);
-    }
+    sendNote = (note) => {
+        this.props.socket.emit('sendNote', note, error =>{});
+    };
 
     loadInstrument = instrumentName => {
         // Re-trigger loading state
@@ -68,6 +67,7 @@ class PianoComponent extends React.Component {
     };
 
     playNote = midiNumber => {
+        this.sendNote(midiNumber);
         this.props.audioContext.resume().then(() => {
             const audioNode = this.state.instrument.play(midiNumber);
             this.setState({
@@ -79,7 +79,8 @@ class PianoComponent extends React.Component {
     };
 
     stopNote = midiNumber => {
-        this.sendNote(midiNumber)
+
+
         this.props.audioContext.resume().then(() => {
             if (!this.state.activeAudioNodes[midiNumber]) {
                 return;

@@ -2,36 +2,30 @@ const express = require('express');
 const socketio = require('socket.io');
 const http = require('http');
 const {existingUser, addUser, removeUser, getUser, getUsersInRoom} =  require("./users.js");
-const {existingRoom, addRoom, removeRoom} = require("./rooms");
+const {existingRoom, addRoom, isMusician, addValueToKey} = require("./rooms");
 const cors = require('cors');
-const app = express();
-app.use(cors());
+const serverApp = express();
+serverApp.use(cors());
 
 const PORT = process.env.PORT || 5000;
 
 const router = require('./router');
 
-const server = http.createServer(app);
+const server = http.createServer(serverApp);
 const io = socketio(server);
 
 io.on('connection', (socket) => {
-
-    console.log(socket.id);
-
     socket.on("canCreate", (name, room, password, callback) => {
         let error;
-
-        room = room.trim().toLowerCase();
 
         if(existingRoom(room))
             error = `Room ${room} already exist`;
 
-        console.log(existingRoom(room));
         if(error)
             return callback(error);
         else {
-            addRoom(room);
-            socket.emit('response', true);
+            addRoom(room, name);
+            socket.emit('response', "canCreate");
         }
 
     });
@@ -39,17 +33,14 @@ io.on('connection', (socket) => {
     socket.on("canJoin", (name, room, callback) => {
         let error;
 
-        room = room.trim().toLowerCase();
-
-        if(existingUser(name))
-            error =  'Username already exist';
         if(!existingRoom(room))
             error = `Room ${room} does not exist`;
 
         if(error)
             return callback(error);
         else{
-            socket.emit('response', true);
+            addValueToKey(room,name);
+            socket.emit('response', "canJoin");
         }
     });
 
@@ -84,8 +75,15 @@ io.on('connection', (socket) => {
         console.log(socket.id, " left")
     });
 
-    socket.on('sendNote', (midiNumbers, instrument) => {
+    socket.on('sendNote', (midiNumbers, callback) => {
         const user = getUser(socket.id);
+        const ismusician = isMusician(user);
+
+        if(!ismusician){
+            return callback("You can not play as spectator");
+        }
+
+
         socket.broadcast.to(user.room).emit('playNote', midiNumbers)
     });
 
@@ -97,6 +95,6 @@ io.on('connection', (socket) => {
 
 });
 
-app.use(router);
+serverApp.use(router);
 
 server.listen(PORT, () => console.log(`Server started on ${PORT}`));

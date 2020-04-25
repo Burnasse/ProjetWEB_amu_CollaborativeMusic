@@ -4,36 +4,41 @@ import MusicComponent from "../MusicComponent/MusicComponent";
 import './room.css';
 import queryString from "query-string";
 import {SocketContext} from "../App";
+import * as firebase from "firebase";
+import {Redirect} from "react-router";
 
 const Room = ({location}) =>{
 
+    let name = "Guest"
+
+    if(firebase.auth().currentUser)
+        name = firebase.auth().currentUser.displayName;
+
     const socket = useContext(SocketContext);
 
-    const [name, setName] = useState('');
     const [room, setRoom] = useState('');
 
-    console.log(location)
+    console.log(location);
 
     useEffect(() => {
-        const {name, room} = queryString.parse(location.search)
 
-        console.log(name, room)
+        const {room} = queryString.parse(location.search);
 
-        setRoom(room)
-        setName(name)
+        setRoom(room);
 
         socket.emit('JOIN', {name, room}, (error) => {
             if(error){
                 alert(error);
             }
-        })
+        });
 
         return () => {
-            socket.emit('disconnect')
-            socket.off()
+            socket.emit('disconnect');
+            socket.off();
         }
 
-    }, [location.search, socket])
+    }, [location.search, socket]);
+
 
     return (
         <div className="room">
@@ -46,6 +51,6 @@ const Room = ({location}) =>{
             </div>
         </div>
     )
-}
+};
 
 export default Room;

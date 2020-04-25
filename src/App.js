@@ -7,9 +7,9 @@ import {AuthProvider} from "./Authentication/Auth/Auth";
 import PrivateRoute from "./Authentication/PrivateRoute";
 import SignUp from "./Authentication/SignUp/SignUp";
 import LogIn from "./Authentication/LogIn/LogIn";
-import MusicRoom from "./HandleRoom/MusicRoom";
+import Home from "./Home/Home";
 
-const socket = io("https://collaborativemusic-server.herokuapp.com/");
+const socket = io("localhost:5000"/*https://collaborativemusic-server.herokuapp.com/"*/);
 export const SocketContext = React.createContext(socket);
 
 class App extends React.Component {
@@ -19,8 +19,8 @@ class App extends React.Component {
                 <SocketContext.Provider value={socket}>
                 <Router>
                     <div>
-                        <PrivateRoute exact path="/" component={MusicRoom} />
-                        <PrivateRoute path="/musicroom" component={Room}/>
+                        <PrivateRoute exact path="/" component={Home} />
+                        <Route path="/musicroom" component={Room}/>
                         <Route exact path="/login" component={LogIn}/>
                         <Route exact path="/signup" component={SignUp}/>
                     </div>

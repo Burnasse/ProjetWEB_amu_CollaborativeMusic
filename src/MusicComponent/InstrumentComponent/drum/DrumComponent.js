@@ -104,7 +104,6 @@ class DrumComponent extends Component {
 
     componentDidMount() {
         this.props.socket.on('playDrum', (audioElm) => {
-            console.log("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
             audioElm.play();
         })
     }
@@ -135,9 +134,9 @@ class DrumComponent extends Component {
     render() {
 
         let drumPad = bankOne.map(item =>
-            <div className="drum-pad" id={item.name} onClick={this.handleClick} >
+            <div className="drum-pad" key={item.key} id={item.name} onClick={this.handleClick} >
                 {item.key}
-                <audio className="clip" ref={item.key} id={item.key} src={item.url}/>
+                <audio  className="clip" key={item.key} ref={item.key} id={item.key} src={item.url}/>
             </div>);
 
         return (
