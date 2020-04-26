@@ -1,0 +1,21 @@
+.clipBoardInput{
+    background-color: #3f3f3f;
+    border-radius: 5px;
+    border: 0;
+    color: white;
+}
+
+.clipButton {
+    background-color: #08ff52;
+    border: 0;
+    border-radius: 1px;
+    color: white;
+}
+
+.spanClip{
+    color: rgb(0, 158, 62);
+}
+
+.clipBoard{
+    padding: 10px;
+}

@@ -1,11 +1,13 @@
 const express = require('express');
 const socketio = require('socket.io');
 const http = require('http');
-const {existingUser, addUser, removeUser, getUser, getUsersInRoom} =  require("./users.js");
-const {existingRoom, addRoom, isMusician, addValueToKey} = require("./rooms");
+const {addUser, removeUser, getUser, getUsersInRoom} =  require("./users.js");
+const {existingRoom, addRoom, isMusician, addValueToKey, isSamePassword} = require("./rooms");
 const cors = require('cors');
 const serverApp = express();
 serverApp.use(cors());
+
+const bcrypt = require('bcrypt');
 
 const PORT = process.env.PORT || 5000;
 
@@ -24,17 +26,22 @@ io.on('connection', (socket) => {
         if(error)
             return callback(error);
         else {
-            addRoom(room, name);
+            let hash = bcrypt.hashSync(password, 10);
+            addRoom(room, hash, name);
             socket.emit('response', "canCreate");
         }
 
     });
 
-    socket.on("canJoin", (name, room, callback) => {
+    socket.on("canJoin", (name, room, password, callback) => {
         let error;
 
         if(!existingRoom(room))
             error = `Room ${room} does not exist`;
+
+
+        if(!(isSamePassword(room, password)))
+            error = 'Invalid password';
 
         if(error)
             return callback(error);
@@ -83,13 +90,17 @@ io.on('connection', (socket) => {
             return callback("You can not play as spectator");
         }
 
-
         socket.broadcast.to(user.room).emit('playNote', midiNumbers)
     });
 
-    socket.on('sendDrum', (audioElm) => {
-        console.log("drum send");
+    socket.on('sendDrum', (audioElm, callback) => {
         const user = getUser(socket.id);
+        const ismusician = isMusician(user);
+
+        if(!ismusician){
+            return callback("You can not play as spectator");
+        }
+        console.log("drum send");
         socket.broadcast.to(user.room).emit('playDrum', audioElm)
     })
 

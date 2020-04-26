@@ -14,8 +14,8 @@ const Message = ({message: {user, text}, name}) => {
         isCurrentUser ? (
                 <div className="msgContainer">
                     <p className="sentText">{trimName}</p>
-                    <div className="msgBox">
-                        <p className="msgText">{text}</p>
+                    <div className="msgBoxUser">
+                        <p className="msgTextUser">{text}</p>
                     </div>
                 </div>
             )

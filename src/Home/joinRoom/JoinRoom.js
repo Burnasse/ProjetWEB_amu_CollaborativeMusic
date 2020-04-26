@@ -28,7 +28,7 @@ const JoinRoom = () => {
 
         let user = firebase.auth().currentUser;
 
-        socket.emit("canJoin", user.displayName, room, (error) => {
+        socket.emit("canJoin", user.displayName, room, password, (error) => {
             if(error)
                 return alert(error);
         })

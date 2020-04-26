@@ -1,6 +1,15 @@
 .msgBox {
     background: #343434;
-    border-radius: 20px;
+    border-radius: 10px;
+    padding: 5px 20px;
+    color: white;
+    display: inline-block;
+    max-width: 80%;
+}
+
+.msgBoxUser {
+    background: #00ff8f;
+    border-radius: 10px;
     padding: 5px 20px;
     color: white;
     display: inline-block;
@@ -19,17 +28,17 @@
 }
 
 .msgContainer {
-    background-color: #1A1A1D;
-    display: flex;
-    justify-content: flex-end;
-    padding: 0 5%;
-    margin-top: 3px;
-}
+     background-color: #1A1A1D;
+     display: flex;
+     justify-content: flex-start;
+     padding: 0 5%;
+     margin-top: 3px;
+ }
 
 .sentText {
     display: flex;
     align-items: center;
-    font-family: Helvetica;
+    font-family: Helvetica, serif;
     color: #828282;
     padding: 10px;
 }

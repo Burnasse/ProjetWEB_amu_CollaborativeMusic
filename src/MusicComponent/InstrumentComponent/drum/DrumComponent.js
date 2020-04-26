@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component, useContext} from 'react';
 import "./drum.css"
 
 const bankOne = [{
@@ -49,41 +49,17 @@ const bankOne = [{
 },
 ];
 
-
-const volumeHandlerStyle = {
-    "--min": 0,
-    "--max": 100,
-    "--val": 50,
-    "--width": "100%",
-    "--height": "1.5em",
-    "--border-radius": "0.5em",
-    "--track-height": "0.75em",
-    "--track-border-width": "1px",
-    "--track-border-color": "#000",
-    "--track-border-style": "solid",
-    "--track-color": "#202020",
-    "--progress-height": "0.75em",
-    "--progress-color": "#35cac5",
-    "--thumb-width": "1.15em",
-    "--thumb-height": "1.15em",
-    "--thumb-border-radius": "40%",
-    "--thumb-color": "#202020",
-    "--thumb-border": "1px solid #000"
-};
-
 class DrumComponent extends Component {
     constructor(props) {
         super(props);
 
-        this.volumeHandler = React.createRef();
         this.iconVolume = React.createRef();
         this.displayVolumeValue = React.createRef();
 
         this.state = {
             bankIndex: 0,
             volumeValue: 50
-        }
-
+        };
 
         this.onMouseLeaveInput = this.onMouseLeaveInput.bind(this);
 
@@ -93,8 +69,7 @@ class DrumComponent extends Component {
     volumeChange = (e) => {
         const volume = e.target.value/100;
         document.querySelectorAll('audio').forEach(el => el.volume = volume);
-    }
-
+    };
 
     onMouseLeaveInput() {
         setTimeout(() => {
@@ -103,10 +78,20 @@ class DrumComponent extends Component {
     }
 
     componentDidMount() {
-        this.props.socket.on('playDrum', (audioElm) => {
-            audioElm.play();
+        this.props.socket.on('playDrum', (event) => {
+            this.handleClick(event);
         })
     }
+
+    onclick = (e) => {
+        this.emitSound(e);
+        this.handleClick(e);
+    };
+
+    emitSound = (e) => {
+        // too much recursion error
+        //this.props.socket.emit('sendDrum', e, error =>{});
+    };
 
     handleClick = (e) => {
         this.setState({
@@ -115,9 +100,8 @@ class DrumComponent extends Component {
         const id = e.target.innerText.trim();
         const audio = this.refs[id];
 
-        //this.props.socket.emit('sendDrum', audio);
         audio.play();
-    }
+    };
 
     componentDidUpdate() {
         if (this.hideVolumeTimeout) {
@@ -134,7 +118,7 @@ class DrumComponent extends Component {
     render() {
 
         let drumPad = bankOne.map(item =>
-            <div className="drum-pad" key={item.key} id={item.name} onClick={this.handleClick} >
+            <div className="drum-pad" key={item.key} id={item.name} onClick={this.onclick} >
                 {item.key}
                 <audio  className="clip" key={item.key} ref={item.key} id={item.key} src={item.url}/>
             </div>);

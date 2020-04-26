@@ -5,7 +5,6 @@ import './room.css';
 import queryString from "query-string";
 import {SocketContext} from "../App";
 import * as firebase from "firebase";
-import {Redirect} from "react-router";
 
 const Room = ({location}) =>{
 
